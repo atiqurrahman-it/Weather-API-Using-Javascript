@@ -29,8 +29,17 @@ function WeatherApi(){
 }
 
 function displayData(data){
+    const weather_icon_code = data.weather[0]["icon"]
     WeatherInformationElement.innerHTML=`
-    <h2 class='pt-2'>Your City Name : ${data.name}</h2>
+    <h2 class='pt-2'>Place : ${data.name}</h2>
+    <h4 class='pt-2'> ${ data.weather[0].description}</h4>
+    <img src="http://openweathermap.org/img/w/${weather_icon_code}.png" <br>
+    <h3 class='fw-bold'> ${data.main.temp} &deg;</h3>
+    <p>Max</p>
+    <p>${data.main.temp_max} </p>
+    <p>min</p>
+    <p>${data.main.temp_min}</p>
+
     `
     console.log(data)
 }

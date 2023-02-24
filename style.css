@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url("img/cool-background.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.box {
+  background-image: url("img/Animated\ Shape.svg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
