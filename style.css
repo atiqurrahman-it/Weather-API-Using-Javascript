@@ -3,10 +3,12 @@
   margin: 0;
 }
 body {
+  min-height: 100vh;
   background-image: url("img/cool-background.png");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  opacity: 0.68;
 }
 
 .box {
